@@ -1,5 +1,6 @@
 body{
 	margin:0;
+	background-color:#a54a;
 
 }
 
@@ -9,8 +10,8 @@ body{
 	position:relative;
 	background-color:#fff;
 	justify-items:center;
-	border:1px solid #000;
 	text-align:center;
+	border:1px solid #000;
 	overflow:hidden;
 	margin:0 auto;
 	max-width:50%;	
@@ -18,12 +19,13 @@ body{
 	
 }
 
-main h1{
-	margin:20px;
-	background-color:green;
+main h1{display:grid;
+	height:100%
+	margin:30px;
 	font-size:40px;
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Roboto Condensed', sans-serif;
+	width:100%;
 
 
 }
@@ -31,9 +33,11 @@ main h1{
 
 main .div_containerContent_div-paragraphMain{
 	display:grid;
-	background-color:#54f3;
-	margin:20px;
 	font-size:40px;
+	flex-shrink:0;
+	width:100%;
+	height:100%;
+	min-content:100px;
 	
 }	
 .div-containerContent_div_main_div_article_section-position h2{
@@ -46,30 +50,40 @@ main .div_containerContent_div-paragraphMain{
 	display:grid;
 	grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
 	width:100%;
+	justify-content:center;
 }
 
-.div-containerContent_div_main_div_article_section-position_div-contentCircle p{	
-
-	
-
+.div-containerContent_div_main_div_article_section-position_div-contentCircle p{
+		display:grid;
+		grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
+		margin:20px;	
 }
 
 .div-containerContent_div_main_div_article_section-position_div-contentCircle img{
 	display:grid;
-	width:80%;
-	height:80%;
+	margin:20px;
 	position:relative;
+	margin:0 auto;
 	top:20px;
-	
+	width:50%;
+	height:70%;
 
 
 }	
 
-.div-containerContent_div_main_ol-smallGalleryInTheMain{
-	border:1px solid #000;
-	width:250px;
-	height:200px;
-	margin:20px;
+
+
+.div-containerContent_div_main_ol-smallGalleryInTheMain
+{
+	display:grid;
+	border:1px dashed #000;
+	margin:0 auto;
+	grid-template-columns:repeat(auto-fill,mimax(10px,1fr));
+	position:relative;
+	bottom:5px;
+	width:30%;
+	padding:10px;
+	height:150px;
 	overflow:scroll;
 	justify-content:center;
 
@@ -77,18 +91,18 @@ main .div_containerContent_div-paragraphMain{
 	}
 
 .div-containerContent_div_main_ol-smallGalleryInTheMain_img-image1{
-	width:250px;
-	height:200px;
+	width:100%;
+	height:100%;
 }
 
 .div-containerContent_div_main_ol-smallGalleryInTheMain_img-image2{
-        width:250px;
-        height:200px;
+        width:100%;
+        height:100%;
 }
 
 .div-containerContent_div_main_ol-smallGalleryInTheMain_img-image3{
-        width:250px;
-        height:200px;
+        width:100%;
+        height:100%;
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .div-containerContent_div-backgrundContainerWindows h4{
@@ -107,6 +121,7 @@ main .div_containerContent_div-paragraphMain{
 	display:grid;
 	text-decoration:none;
 	color:#000;
+	margin:0 auto;
 	justify-content:center;
 }
 
@@ -222,7 +237,13 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 
 
-
+.div-containerContent_div-contenedorDeGoogle{
+	display:grid;
+	background-color:#444;
+	margin:0 auto;
+	width:80%;
+	height:100%;
+	}
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -231,8 +252,10 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	background-color:#FF5733;
 	color:#fff;
 	font-size:30px;
-	grid-template-columns:repeat(auto-fill,mimax(100px,100%));
+	grid-auto-columns:repeat(auto-fill,mimax(100px,100%));
 	justify-content:center;
+	width:100%;
+	height:100%;
 
 
 	
